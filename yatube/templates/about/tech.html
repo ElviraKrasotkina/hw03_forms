@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Технологии{% endblock %}
+{% block content %}
+<div class="row">
+  <h1>Вот, что я умею!</h1>
+  <aside class="col-12 col-md-3">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        Python
+      </li>
+      <li class="list-group-item">
+        Django
+      </li>
+    </ul>
+  </aside>
+  <article class="col-12 col-md-9">
+    <p>
+      Прежде всего я создала приложение "about"
+      и зарегистрировала его в settings.py. Это несложно.
+      Затем я прописала адреса создаваемых страниц в головной urls.py и в about/urls.py.
+      После этого я создала два view-класса, наследующихся 
+      от TemplateView в about/views.py.
+      Это уже существенно сложнее, но с теорией понятно.
+      А после этого я добавила шаблоны статичных страниц по адресам:
+      templates/about/author.html и templates/about/tech.html.
+      Пожалуй, написание кодов во views.py представляет для меня 
+      наибольшую сложность в процессе изучения Python.
+    </p>
+  </article>
+</div>
+{% endblock %}
