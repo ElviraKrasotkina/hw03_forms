@@ -72,7 +72,7 @@ def post_create(request):
         form.save()
         return redirect('posts:profile', username=request.user)
     return render(request, 'posts/create_post.html', {'form': form})
-    
+
 
 @login_required
 def post_edit(request, post_id):
